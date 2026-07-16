@@ -39,7 +39,7 @@ The project is designed for the following hardware.
 Figure 1 shows the AK Embedded Base Kit used in this project.
 
 <p align="center">
-<img src="images/board.png" width="650">
+<img src="hardware/images/ak-embedded-base-kit-version-3.jpg" width="480"/>
 </p>
 
 <p align="center">
