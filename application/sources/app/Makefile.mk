@@ -1,0 +1,43 @@
+include sources/app/screens/Makefile.mk
+
+CFLAGS		+= -I./sources/app
+CPPFLAGS	+= -I./sources/app
+
+VPATH += sources/app
+
+# CPP source files
+SOURCES_CPP += sources/app/task_system.cpp
+SOURCES_CPP += sources/app/app.cpp
+SOURCES_CPP += sources/app/app_data.cpp
+SOURCES_CPP += sources/app/app_non_clear_ram.cpp
+SOURCES_CPP += sources/app/app_bsp.cpp
+SOURCES_CPP += sources/app/app_modbus_pull.cpp
+SOURCES_CPP += sources/app/shell.cpp
+
+
+
+SOURCES_CPP += sources/app/task_shell.cpp
+SOURCES_CPP += sources/app/task_life.cpp
+SOURCES_CPP += sources/app/task_fw.cpp
+SOURCES_CPP += sources/app/task_list.cpp
+SOURCES_CPP += sources/app/task_display.cpp
+
+SOURCES_CPP += sources/app/screens/scr_flappy_start.cpp
+SOURCES_CPP += sources/app/screens/scr_flappy_mode.cpp
+SOURCES_CPP += sources/app/screens/scr_flappy_menu.cpp
+SOURCES_CPP += sources/app/screens/scr_flappy_game.cpp
+SOURCES_CPP += sources/app/screens/scr_about.cpp
+SOURCES_CPP += sources/app/screens/scr_high_score.cpp
+SOURCES_CPP += sources/app/screens/high_score.cpp 
+SOURCES_CPP += sources/app/screens/sound.cpp 
+SOURCES_CPP += sources/app/screens/scr_settings.cpp 
+
+
+ifeq ($(TASK_ZIGBEE_OPTION),-DTASK_ZIGBEE_EN)
+SOURCES_CPP += sources/app/task_zigbee.cpp
+endif
+
+SOURCES_CPP += sources/app/task_if.cpp
+SOURCES_CPP += sources/app/task_rf24_if.cpp
+SOURCES_CPP += sources/app/task_uart_if.cpp
+SOURCES_CPP += sources/app/task_dbg.cpp
