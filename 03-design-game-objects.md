@@ -30,7 +30,7 @@ The purpose of this document is to explain the behavior, properties, and relatio
 The Bird is the player-controlled character. It responds to button input, moves vertically according to the selected game mode, and performs collision detection with obstacles and screen boundaries.
 
 <p align="center">
-<img src="hardware/images/object_bird.png" width="120"/>
+<img src="hardware/images/object_bird.png" width="150"/>
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ The Bird is the player-controlled character. It responds to button input, moves 
 The Bird is the primary player-controlled object in the Flappy Bird Game. It is responsible for responding to player input, updating its movement based on the selected game mode, and interacting with gameplay obstacles. Throughout the game, the Bird continuously updates its position, checks for collisions, and determines whether the game should continue or transition to the Game Over state.
 
 <p align="center">
-<img src="hardware/images/bird_runtime_sequence.png" width="120"/>
+<img src="hardware/images/bird_runtime_sequence.png" width="520"/>
 </p>
 
 <p align="center">
@@ -104,7 +104,7 @@ Pipes are the primary obstacles during the Pipe Phase. They move continuously fr
 The Pipe is the primary obstacle encountered during normal gameplay. Pipes continuously move from the right side of the screen toward the Bird while maintaining a randomly generated gap. Successfully navigating through these gaps increases the player's score and gradually increases the game's difficulty.
 
 <p align="center">
-<img src="hardware/images/pipe_runtime_sequence.png" width="180"/>
+<img src="hardware/images/pipe_runtime_sequence.png" width="480"/>
 </p>
 
 <p align="center">
@@ -148,7 +148,7 @@ The Arrow is a special obstacle introduced after the Bird reaches a predefined s
 The Arrow is a special obstacle that appears after the player reaches a predefined score threshold. Unlike normal Pipes, Arrows move at a higher speed and introduce a temporary challenge before the next gameplay level begins.
 
 <p align="center">
-<img src="hardware/images/arrow_runtime_sequence.png" width="150"/>
+<img src="hardware/images/arrow_runtime_sequence.png" width="550"/>
 </p>
 
 <p align="center">
@@ -184,7 +184,7 @@ Clouds are decorative background objects. They slowly move across the screen to 
 Clouds are decorative background objects that provide a more dynamic visual environment. Although they do not interact with the Bird or influence gameplay, they continuously scroll across the screen to improve the overall presentation.
 
 <p align="center">
-<img src="hardware/images/cloud_runtime_sequence.png" width="180"/>
+<img src="hardware/images/cloud_runtime_sequence.png" width="480"/>
 </p>
 
 <p align="center">
@@ -202,7 +202,7 @@ Figure 8 shows one of the background Cloud objects used to create a continuous s
 Stars are decorative background objects displayed in the sky. They do not affect gameplay.
 
 <p align="center">
-<img src="hardware/images/object_star.png" width="180"/>
+<img src="hardware/images/object_star.png" width="100"/>
 </p>
 
 <p align="center">
@@ -219,7 +219,7 @@ Stars are decorative background objects displayed in the sky. They do not affect
 Stars are decorative objects rendered in the background to create a richer visual atmosphere. They remain independent from the gameplay logic and serve only as graphical enhancements.
 
 <p align="center">
-<img src="hardware/images/star_runtime_sequence.png" width="180"/>
+<img src="hardware/images/star_runtime_sequence.png" width="480"/>
 </p>
 
 <p align="center">
@@ -255,7 +255,7 @@ Trees are decorative foreground objects placed near the ground to enrich the gam
 Trees are foreground decorative objects positioned near the ground. Together with the Clouds and Stars, Trees contribute to the illusion of continuous movement and create a more immersive gameplay environment.
 
 <p align="center">
-<img src="hardware/images/tree_runtime_sequence.png" width="150"/>
+<img src="hardware/images/tree_runtime_sequence.png" width="550"/>
 </p>
 
 <p align="center">
@@ -290,7 +290,7 @@ The Score system records the player's progress throughout the game. A point is a
 ### Runtime Sequence
 
 <p align="center">
-<img src="hardware/images/score_runtime_sequence.png" width="150"/>
+<img src="hardware/images/score_runtime_sequence.png" width="550"/>
 </p>
 
 <p align="center">
@@ -325,7 +325,7 @@ The Level system controls the overall game progression. After the Arrow Phase ha
 ### Runtime Sequence
 
 <p align="center">
-<img src="hardware/images/level_runtime_sequence.png" width="150"/>
+<img src="hardware/images/level_runtime_sequence.png" width="550"/>
 </p>
 
 <p align="center">
@@ -360,7 +360,7 @@ The Game Controller coordinates all gameplay objects and controls the overall ga
 All gameplay objects are coordinated by the Game Controller through a continuous update cycle. During every game tick, the controller updates object states, processes player input, performs collision detection, updates the score, manages level progression, and finally renders the complete frame to the OLED display.
 
 <p align="center">
-<img src="images/game_object_interaction_sequence.png" width="900"/>
+<img src="hardware/images/game_object_interaction_sequence.png" width="650"/>
 </p>
 
 <p align="center">
