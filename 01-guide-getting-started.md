@@ -71,23 +71,24 @@ The repository is organized as follows.
 ```
 flappy-bird-game
 │
-├── docs
-├── hardware
-├── sources
-├── Makefile
-├── README.md
-└── .clang-format
+├── application/
+├── boot/
+├── docs/
+├── hardware/
+├── LICENSE
+└── README.md
 ```
 
 The purpose of each directory is summarized below.
 
 | Folder | Description |
 |---------|-------------|
-| docs | Project documentation |
-| hardware | Hardware resources |
-| sources | Application source code |
-| Makefile | Build configuration |
-| README.md | Project overview |
+| **application/** | Contains the Flappy Bird application source code and game resources. |
+| **boot/** | Bootloader project used by the AK Embedded Base Kit. |
+| **docs/** | Project documentation, design diagrams, and development guides. |
+| **hardware/** | Hardware resources, including images, schematics, and board-related files. |
+| **LICENSE** | Project license information. |
+| **README.md** | Project overview and quick introduction. |
 
 ---
 
