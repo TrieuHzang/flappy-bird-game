@@ -35,11 +35,11 @@ While developing and playing Flappy Bird, you will explore several core concepts
 - Real-time game loop: Updating object positions, rendering graphics, detecting collisions, and calculating scores at fixed intervals.
 - State management: Implementing finite state machines to control screen transitions, gameplay flow, and game-over conditions.
 
-[<div align="center">
+<div align="center">
   <img src="hardware/images/ak-foundation-logo.png" width="240"/>
   <br>
-  <em>Figure 2. AK Embedded Base Kit - STM32L151</em>
-</div>](https://github.com/the-ak-foundation)
+  <em>Figure 2. AK Foundation</em>
+</div>
 
 This kit would not have been possible without the help of [EPCB](https://epcb.vn/pages/frontpage).
 
@@ -50,7 +50,11 @@ AK Embedded Base Kit, utilizing STM32L151 MCU, is an evaluation kit for advanced
 - This kit integrates 1.54" Oled LCD, 3 push buttons, and 1 buzzer, which would be sufficient to create a small video game with an event driven paradigm.
 - It also includes RS485, Qwiic Connect System, and Grove Ecosystems, suitable for prototyping other practical applications in embedded systems.
 
-[<img src="hardware/images/ak-embedded-base-kit-version-3.jpg" width="480"/>](<https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu>)
+<div align="center">
+  <img src="hardware/images/ak-embedded-base-kit-version-3.jpg" width="480"/>
+  <br>
+  <em>Figure 3. AK Embedded Base Kit - STM32L151</em>
+</div>
 
 ### Purpose
 
@@ -58,8 +62,11 @@ Students who are enrolled in the AK foundation's embedded training program will 
 
 We also hope that this repository will also be useful for those are on the look out for a well-built kit to practice their embedded systems programming skills.
 
-
-[<img src="hardware/images/ak-mcu-kit-hw2-github-1280x640px.png" width="960"/>](<https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu>)
+<div align="center">
+  <img src="hardware/images/ak-mcu-kit-hw2-github-1280x640px.png" width="560"/>
+  <br>
+  <em>Figure 4. AK MCU KIT</em>
+</div>
 
 ### Memory map
 
@@ -79,9 +86,18 @@ ak_flash /dev/ttyUSB0 ak-base-kit-stm32l151-application.bin 0x08003000
 
 [AK base kit's schematic](/hardware/schematic/schematic-ak-embedded-base-kit-version-3.pdf)
 
-[<img src="hardware/images/board-view-top.png" width="380"/>](<https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu>)
+<div align="center">
+  <img src="hardware/images/board-view-top.png" width="380"/>
+  <br>
+  <em>Figure 5. Board view top</em>
+</div>
 
-[<img src="hardware/images/board-view-bottom.png" width="380"/>](https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu)
+<div align="center">
+  <img src="hardware/images/board-view-bottom.png" width="380"/>
+  <br>
+  <em>Figure 6. Board view bottom</em>
+</div>
+
 
 ### Reference
 
@@ -97,7 +113,7 @@ The following section describes the gameplay and core mechanics of Flappy Bird. 
 <div align="center">
   <img src="hardware/images/menu.png" width="600">
   <br>
-  <em>Figure 2. Menu Screen</em>
+  <em>Figure 7. Menu Screen</em>
 </div>
 
 The game opens on the Flappy Menu, which provides the following options:
@@ -110,7 +126,7 @@ The game opens on the Flappy Menu, which provides the following options:
 <div align="center">
   <img src="hardware/images/select_mode.png" width="600">
   <br>
-  <em>Figure 3. Select Mode Screen</em>
+  <em>Figure 8. Select Mode Screen</em>
 </div>
 
 After selecting Start Game, the player is taken to the Select Mode screen to choose the gameplay style.
@@ -124,8 +140,8 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 
 | Bitmap | Object Name | Description |
 |:------:|-------------|-------------|
-| <img src="hardware/images/object_bird.png" width="48"> | **Bird** | The player-controlled character positioned on the left side of the screen. The Bird responds to button inputs, moves according to the selected game mode, and must avoid colliding with Pipes and the Ground. |
-| <img src="hardware/images/object_star.png" width="48"> | **Star** | A decorative background object that slowly scrolls across the sky. It is rendered only to enrich the game's visual appearance and has no effect on gameplay. |
-| <img src="hardware/images/object_cloud.png" width="48"> | **Cloud** | A decorative background object that moves across the screen at a slower speed than the Pipes, creating a dynamic scrolling sky. It does not participate in collision detection. |
-| <img src="hardware/images/object_tree.png" width="48"> | **Tree** | A decorative foreground object placed near the ground. Trees scroll together with the scene to create a more lively environment and have no influence on the game mechanics. |
+| <img src="hardware/images/object_bird.png" width="78"> | **Bird** | The player-controlled character positioned on the left side of the screen. The Bird responds to button inputs, moves according to the selected game mode, and must avoid colliding with Pipes and the Ground. |
+| <img src="hardware/images/object_star.png" width="78"> | **Star** | A decorative background object that slowly scrolls across the sky. It is rendered only to enrich the game's visual appearance and has no effect on gameplay. |
+| <img src="hardware/images/object_cloud.png" width="78"> | **Cloud** | A decorative background object that moves across the screen at a slower speed than the Pipes, creating a dynamic scrolling sky. It does not participate in collision detection. |
+| <img src="hardware/images/object_tree.png" width="78"> | **Tree** | A decorative foreground object placed near the ground. Trees scroll together with the scene to create a more lively environment and have no influence on the game mechanics. |
 
