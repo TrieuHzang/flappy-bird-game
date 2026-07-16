@@ -242,8 +242,6 @@ Use **4 spaces** for each indentation level.
 
 Do not use tabs.
 
-✔ Good
-
 ```cpp
 void bird_update()
 {
@@ -252,15 +250,6 @@ void bird_update()
 }
 ```
 
-✘ Bad
-
-```cpp
-void bird_update()
-{
-\tbird_move();
-\tcheck_collision();
-}
-```
 
 ---
 
@@ -268,19 +257,10 @@ void bird_update()
 
 Opening braces should always appear on a new line.
 
-✔ Good
 
 ```cpp
 if (bird.y < 0)
 {
-    game_over();
-}
-```
-
-✘ Bad
-
-```cpp
-if (bird.y < 0) {
     game_over();
 }
 ```
@@ -325,7 +305,6 @@ Long expressions should be wrapped across multiple lines.
 
 Each function should perform **one specific task**.
 
-✔ Good
 
 ```cpp
 bird_update();
@@ -339,11 +318,6 @@ pipe_update();
 render_score();
 ```
 
-✘ Avoid
-
-```cpp
-update_everything();
-```
 
 Large functions should be divided into smaller helper functions.
 
@@ -353,7 +327,6 @@ Large functions should be divided into smaller helper functions.
 
 Declare variables close to where they are first used.
 
-✔ Good
 
 ```cpp
 int score = 0;
@@ -361,14 +334,6 @@ int score = 0;
 bird_update();
 ```
 
-Avoid
-
-```cpp
-int score;
-int level;
-int speed;
-...
-```
 
 when the variables are not immediately required.
 
@@ -378,7 +343,6 @@ when the variables are not immediately required.
 
 Avoid hard-coded values inside the source code.
 
-✔ Good
 
 ```cpp
 #define PIPE_GAP      24
@@ -389,31 +353,18 @@ Avoid hard-coded values inside the source code.
 pipe.y += PIPE_GAP;
 ```
 
-✘ Bad
-
-```cpp
-pipe.y += 24;
-```
-
 ---
 
 ## 8. Comments
 
 Comments should explain **why**, not **what**.
 
-✔ Good
 
 ```cpp
 /* Increase pipe speed after each level */
 level++;
 ```
 
-✘ Bad
-
-```cpp
-/* Increase level */
-level++;
-```
 
 The code itself should already describe what it is doing.
 
@@ -608,7 +559,6 @@ flappy-bird-game
 ├── .clang-format
 ├── application
 ├── boot
-├── docs
 ├── hardware
 └── README.md
 ```
