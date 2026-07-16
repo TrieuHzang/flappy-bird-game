@@ -4,7 +4,7 @@
 
 </div>
 
-# AK Embedded Base Kit - STM32L151
+# Flappy Bird Game - Game built on AK Embedded Base Kit
 
 [<img src="hardware/images/ak-foundation-logo.png" width="240"/>](https://github.com/the-ak-foundation)
 
