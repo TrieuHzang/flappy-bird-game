@@ -75,9 +75,9 @@ ak_flash /dev/ttyUSB0 ak-base-kit-stm32l151-application.bin 0x08003000
 
 [AK base kit's schematic](/hardware/schematic/schematic-ak-embedded-base-kit-version-3.pdf)
 
-[<img src="hardware/images/board-view-top.png" width="480"/>](<https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu>)
+[<img src="hardware/images/board-view-top.png" width="380"/>](<https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu>)
 
-[<img src="hardware/images/board-view-bottom.png" width="480"/>](https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu)
+[<img src="hardware/images/board-view-bottom.png" width="380"/>](https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu)
 
 ### Reference
 
@@ -115,3 +115,13 @@ After selecting Start Game, the player is taken to the Select Mode screen to cho
 - Reverse Mode: The bird continuously flies upward. Press the button to move the bird downward, requiring the player to adapt to an inverted control scheme.
 
 Once a mode is selected, the game initializes the gameplay objects and starts a new session.
+
+### Objects in the game
+
+| Bitmap | Object Name | Description |
+|:------:|-------------|-------------|
+| <img src="hardware/images/object_bird.png" width="48"> | **Bird** | The player-controlled character positioned on the left side of the screen. The Bird responds to button inputs, moves according to the selected game mode, and must avoid colliding with Pipes and the Ground. |
+| <img src="hardware/images/object_star.png" width="48"> | **Star** | A decorative background object that slowly scrolls across the sky. It is rendered only to enrich the game's visual appearance and has no effect on gameplay. |
+| <img src="hardware/images/object_cloud.png" width="48"> | **Cloud** | A decorative background object that moves across the screen at a slower speed than the Pipes, creating a dynamic scrolling sky. It does not participate in collision detection. |
+| <img src="hardware/images/object_tree.png" width="48"> | **Tree** | A decorative foreground object placed near the ground. Trees scroll together with the scene to create a more lively environment and have no influence on the game mechanics. |
+
