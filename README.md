@@ -35,7 +35,11 @@ While developing and playing Flappy Bird, you will explore several core concepts
 - Real-time game loop: Updating object positions, rendering graphics, detecting collisions, and calculating scores at fixed intervals.
 - State management: Implementing finite state machines to control screen transitions, gameplay flow, and game-over conditions.
 
-[<img src="hardware/images/ak-foundation-logo.png" width="240"/>](https://github.com/the-ak-foundation)
+[<div align="center">
+  <img src="hardware/images/ak-foundation-logo.png" width="240"/>
+  <br>
+  <em>Figure 2. AK Embedded Base Kit - STM32L151</em>
+</div>](https://github.com/the-ak-foundation)
 
 This kit would not have been possible without the help of [EPCB](https://epcb.vn/pages/frontpage).
 
