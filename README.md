@@ -6,6 +6,8 @@
 
 # Flappy Bird Game - Game built on AK Embedded Base Kit
 
+[<img src="hardware/images/logo_flappy_bird.png" width="240"/>]
+
 [<img src="hardware/images/ak-foundation-logo.png" width="240"/>](https://github.com/the-ak-foundation)
 
 This kit would not have been possible without the help of [EPCB](https://epcb.vn/pages/frontpage).
