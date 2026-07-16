@@ -7,7 +7,7 @@
 ## Flappy Bird Game - Game built on AK Embedded Base Kit
 
 <figure align="center">
-  <img src="docs/images/gameplay.png" width="320">
+  <img src="hardware/images/logo_flappy_bird.png" width="600">
   <figcaption><b>Figure 1.</b> Flappy Bird Game</figcaption>
 </figure>
 
