@@ -6,7 +6,22 @@
 
 # Flappy Bird Game - Game built on AK Embedded Base Kit
 
-<img src="hardware/images/logo_flappy_bird.png" width="1000"/>
+<img src="hardware/images/logo_flappy_bird.png" width="800"/>
+
+# Gameplay demo
+
+## Documentation
+
+| File | Description |
+|------|-------------|
+| README.md | Main project overview, hardware information, gameplay, build instructions, and project structure. |
+| docs/01-guide-getting-started.md | Getting started guide for building, flashing, and running the Flappy Bird project. |
+| docs/02-guide-coding-rules.md | Coding conventions, project architecture, naming rules, and development guidelines. |
+| docs/03-design-game-objects.md | Design and behavior of gameplay objects including Bird, Pipe, Ground, Score, and UI components. |
+| docs/04-design-runtime.md | Runtime event flow, state machine, game loop, button processing, timer events, rendering pipeline, and screen transitions. |
+| docs/05-design-assets.md | Graphics resources, bitmap organization, sprite formats, fonts, and animation assets. |
+| docs/06-design-screens.md | Description of all screens including Startup, Menu, Gameplay, Pause, and Game Over. |
+| docs/07-build-and-simulator.md | Build instructions, simulator usage, flashing firmware, and project configuration. |
 
 [<img src="hardware/images/ak-foundation-logo.png" width="240"/>](https://github.com/the-ak-foundation)
 
