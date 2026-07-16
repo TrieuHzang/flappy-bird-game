@@ -88,6 +88,30 @@ ak_flash /dev/ttyUSB0 ak-base-kit-stm32l151-application.bin 0x08003000
 | Vendor | <https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu> |
 
 ## II. Game Description and Objects
-The following section describes the gameplay and core mechanics of Fly Hunter. It serves as a reference for understanding the game's mechanics and firmware implementation. Opens on the Main Menu, which offers the following options:
-<img src="hardware/images/logo_flappy_bird.png" width="500"/>
+The following section describes the gameplay and core mechanics of Flappy Bird. It serves as a reference for understanding the game's mechanics and firmware implementation. Opens on the Flappy Menu, which offers the following options:
 
+<div align="center">
+  <img src="hardware/images/menu.png" width="600">
+  <br>
+  <em>Figure 2. Menu Screen</em>
+</div>
+
+The game opens on the Flappy Menu, which provides the following options:
+
+- Start Game: Open the game mode selection screen before starting a new game.
+- High Score: View the highest score stored by the game.
+- Settings: Configure game settings, including enabling or disabling sound, resetting the high score, and returning to the main menu.
+- About: Display information about the game, including the current version and author.
+
+<div align="center">
+  <img src="hardware/images/select_mode.png" width="600">
+  <br>
+  <em>Figure 3. Select Mode Screen</em>
+</div>
+
+After selecting Start Game, the player is taken to the Select Mode screen to choose the gameplay style.
+
+- Normal Mode: The bird flies downward under the effect of gravity. Press the jump button to make the bird fly upward and avoid incoming pipes.
+- Reverse Mode: The bird continuously flies upward. Press the button to move the bird downward, requiring the player to adapt to an inverted control scheme.
+
+Once a mode is selected, the game initializes the gameplay objects and starts a new session.
