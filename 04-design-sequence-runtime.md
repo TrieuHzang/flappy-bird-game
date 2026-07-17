@@ -21,7 +21,7 @@ The runtime architecture consists of several independent modules working togethe
 - The entire system is synchronized by a periodic timer.
 
 <p align="center">
-<img src="images/runtime_architecture.png" width="850"/>
+<img src="hardware/images/runtime_architecture.png" width="850"/>
 </p>
 
 <p align="center">
@@ -41,7 +41,7 @@ The Flappy Bird Game is organized into several runtime states. Each state repres
 Player input and gameplay events determine when transitions occur between these states.
 
 <p align="center">
-<img src="images/runtime_state.png" width="700"/>
+<img src="hardware/images/runtime_state.png" width="700"/>
 </p>
 
 <p align="center">
@@ -92,7 +92,7 @@ During gameplay, the system repeatedly executes a fixed runtime cycle driven by 
 The runtime flow begins by reading player input, followed by updating gameplay objects, checking collisions, updating the score and level, and finally rendering the completed frame to the OLED display.
 
 <p align="center">
-<img src="images/runtime_flow.png" width="900"/>
+<img src="hardware/images/runtime_flow.png" width="900"/>
 </p>
 
 <p align="center">
@@ -195,7 +195,7 @@ Gameplay objects are rendered in the following order:
 Drawing objects in a fixed order ensures that foreground objects correctly overlap background decorations.
 
 <p align="center">
-<img src="images/rendering_pipeline.png" width="900"/>
+<img src="hardware/images/rendering_pipeline.png" width="900"/>
 </p>
 
 <p align="center">
