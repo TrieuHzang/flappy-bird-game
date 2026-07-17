@@ -21,7 +21,7 @@ The runtime architecture consists of several independent modules working togethe
 - The entire system is synchronized by a periodic timer.
 
 <p align="center">
-<img src="images/runtime-architecture.png" width="850"/>
+<img src="images/runtime_architecture.png" width="850"/>
 </p>
 
 <p align="center">
@@ -29,60 +29,6 @@ The runtime architecture consists of several independent modules working togethe
 </p>
 
 Figure 1 illustrates the overall runtime architecture. The Game Controller acts as the central component that coordinates player input, gameplay updates, score management, and rendering.
-
-### Runtime Architecture Diagram
-
-```mermaid
-flowchart LR
-
-Player[Player]
-
-Button[MODE Button]
-
-Game[Game Controller]
-
-Bird[Bird]
-
-Pipe[Pipe Manager]
-
-Arrow[Arrow Manager]
-
-Score[Score Manager]
-
-Level[Level Manager]
-
-Renderer[OLED Renderer]
-
-Display[OLED Display]
-
-Player --> Button
-
-Button --> Game
-
-Game --> Bird
-
-Game --> Pipe
-
-Game --> Arrow
-
-Game --> Score
-
-Game --> Level
-
-Bird --> Game
-
-Pipe --> Game
-
-Arrow --> Game
-
-Score --> Game
-
-Level --> Game
-
-Game --> Renderer
-
-Renderer --> Display
-```
 
 ---
 
@@ -95,44 +41,14 @@ The Flappy Bird Game is organized into several runtime states. Each state repres
 Player input and gameplay events determine when transitions occur between these states.
 
 <p align="center">
-<img src="images/runtime-state-machine.png" width="700"/>
+<img src="images/runtime_state.png" width="700"/>
 </p>
 
 <p align="center">
 <b>Figure 2.</b> Runtime state machine.
 </p>
 
-Figure 2 shows the state transitions implemented by the runtime system.
-
-### Runtime State Machine
-
-```mermaid
-stateDiagram-v2
-
-[*] --> Startup
-
-Startup --> MainMenu
-
-MainMenu --> Setting
-
-Setting --> MainMenu
-
-MainMenu --> About
-
-About --> MainMenu
-
-MainMenu --> ModeSelection
-
-ModeSelection --> Gameplay
-
-Gameplay --> ArrowPhase
-
-ArrowPhase --> Gameplay
-
-Gameplay --> GameOver
-
-GameOver --> MainMenu
-```
+Figure 2 illustrates the runtime state transitions of the Flappy Bird Game. After startup, the player enters the Main Menu, where gameplay settings can be configured or project information can be viewed. Once a game mode is selected, the system enters the Gameplay state. During gameplay, the game may temporarily switch to the Arrow Phase before returning to the normal Pipe Phase. Any collision immediately transfers the system to the Game Over state.
 
 ### Runtime States
 
@@ -164,3 +80,151 @@ Each timer tick consists of the following operations:
 7. Render the OLED display.
 
 The runtime cycle continues until the Bird collides with an obstacle or reaches a Game Over condition.
+
+---
+
+# Runtime Flow
+
+## Overview
+
+During gameplay, the system repeatedly executes a fixed runtime cycle driven by a periodic timer event. Every timer tick updates the gameplay objects in a predefined order to ensure smooth animation, deterministic behavior, and consistent game logic.
+
+The runtime flow begins by reading player input, followed by updating gameplay objects, checking collisions, updating the score and level, and finally rendering the completed frame to the OLED display.
+
+<p align="center">
+<img src="images/runtime_flow.png" width="900"/>
+</p>
+
+<p align="center">
+<b>Figure 3.</b> Runtime flow of one gameplay update.
+</p>
+
+Figure 3 presents the execution flow of a single gameplay update. Every timer tick follows the same sequence, ensuring that player input, gameplay logic, collision detection, score management, and rendering remain synchronized throughout the game.
+
+---
+
+# Player Input Processing
+
+Player interaction is performed using the MODE button.
+
+Depending on the selected gameplay mode, the Game Controller interprets the button input differently.
+
+- **Normal Mode**
+  - Pressing the MODE button makes the Bird fly upward.
+  - Gravity continuously pulls the Bird downward.
+
+- **Reverse Mode**
+  - Gravity continuously pulls the Bird upward.
+  - Pressing the MODE button moves the Bird downward.
+
+The processed input is forwarded to the Bird Controller before gameplay objects are updated.
+
+---
+
+# Timer Processing
+
+The periodic timer serves as the heartbeat of the game.
+
+Every timer event performs the following operations:
+
+1. Read player input.
+2. Update Bird movement.
+3. Update Pipe movement.
+4. Update Arrow movement (if active).
+5. Detect collisions.
+6. Update score.
+7. Update level.
+8. Render the OLED display.
+
+Because every gameplay object is updated during the same timer event, animations remain synchronized throughout the game.
+
+---
+
+# Collision Processing
+
+Collision detection is executed immediately after all gameplay objects have completed their movement update.
+
+The Bird is tested against:
+
+- Pipes
+- Arrows
+- Screen boundaries.
+
+Whenever a collision is detected, the Game Controller immediately terminates the gameplay loop and switches the runtime state to **Game Over**.
+
+Collision detection is performed before rendering to ensure that the OLED always displays the correct gameplay state.
+
+---
+
+# Score and Level Processing
+
+The Score Manager continuously monitors the player's progress.
+
+Whenever the Bird successfully passes through a Pipe:
+
+- The current score is increased.
+- The OLED display is updated.
+
+After the predefined score threshold is reached:
+
+- The Arrow Phase is activated.
+- The player must successfully avoid every Arrow.
+- When the Arrow Phase finishes, the current level increases.
+- Pipe movement speed is increased to provide greater gameplay difficulty.
+
+This mechanism allows the game to gradually become more challenging while preserving the same core gameplay mechanics.
+
+---
+
+# Rendering Pipeline
+
+After all gameplay logic has completed, the Renderer constructs the next OLED frame.
+
+Gameplay objects are rendered in the following order:
+
+1. Background
+2. Clouds
+3. Stars
+4. Pipes
+5. Bird
+6. Arrows
+7. Trees
+8. Score
+9. Level
+
+Drawing objects in a fixed order ensures that foreground objects correctly overlap background decorations.
+
+<p align="center">
+<img src="images/rendering_pipeline.png" width="900"/>
+</p>
+
+<p align="center">
+<b>Figure 4.</b> Rendering pipeline.
+</p>
+
+Figure 4 illustrates the rendering order used by the Flappy Bird Game. Decorative background objects are rendered first, followed by gameplay objects and finally the user interface before the completed frame is transferred to the OLED display.
+
+---
+
+# Runtime Characteristics
+
+The runtime architecture provides several important characteristics:
+
+- Event-driven execution.
+- Deterministic gameplay updates.
+- Modular object management.
+- Consistent rendering order.
+- Smooth gameplay animation.
+- Easy extensibility for future gameplay features.
+
+These characteristics simplify software maintenance while ensuring predictable gameplay behavior on the embedded platform.
+
+---
+
+# Summary
+
+The Flappy Bird Game follows an event-driven runtime architecture in which every gameplay update is synchronized by a periodic timer.
+
+During each runtime cycle, player input is processed, gameplay objects are updated, collisions are evaluated, score and level progression are managed, and the completed frame is rendered to the OLED display.
+
+By separating gameplay logic into independent runtime components coordinated by the Game Controller, the software remains modular, maintainable, and scalable for future feature development.
