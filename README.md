@@ -17,12 +17,12 @@
 
 # Gameplay demo
 
-
 <div align="center">
   <video src="https://github.com/user-attachments/assets/dbf64976-78c0-44e9-a612-25b0aa40bf5b" width="300%" max-width="1400px" controls></video>
   <br>
   <em>Gameplay demo</em>
 </div>
+
 # Documentation
 
 | File | Description |
