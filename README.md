@@ -23,6 +23,12 @@
   <em>Gameplay demo</em>
 </div>
 
+The gameplay demonstration begins with the **Flappy Bird** logo and the title **FLAPPY BIRD** displayed on the OLED screen as the startup screen.
+
+After the startup animation, the game automatically enters a short gameplay demonstration. During this demo, the Bird flies automatically while the Pipes scroll across the screen for approximately **5 seconds**, allowing the player to preview the gameplay.
+
+When the demo finishes, the message **"PRESS MODE"** is displayed to indicate that the player can continue. Even if this message is not currently visible due to the blinking animation, pressing the **MODE** button at any time during this stage immediately opens the **FLAPPY MENU**.
+
 # Documentation
 
 | File | Description |
