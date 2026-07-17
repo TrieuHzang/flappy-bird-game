@@ -148,7 +148,7 @@ The Arrow is a special obstacle introduced after the Bird reaches a predefined s
 The Arrow is a special obstacle that appears after the player reaches a predefined score threshold. Unlike normal Pipes, Arrows move at a higher speed and introduce a temporary challenge before the next gameplay level begins.
 
 <p align="center">
-<img src="hardware/images/arrow_runtime_sequence.png" width="550"/>
+<img src="hardware/images/arrow_runtime_sequence.png" width="450"/>
 </p>
 
 <p align="center">
@@ -184,7 +184,7 @@ Clouds are decorative background objects. They slowly move across the screen to 
 Clouds are decorative background objects that provide a more dynamic visual environment. Although they do not interact with the Bird or influence gameplay, they continuously scroll across the screen to improve the overall presentation.
 
 <p align="center">
-<img src="hardware/images/cloud_runtime_sequence.png" width="480"/>
+<img src="hardware/images/cloud_runtime_sequence.png" width="340"/>
 </p>
 
 <p align="center">
@@ -219,7 +219,7 @@ Stars are decorative background objects displayed in the sky. They do not affect
 Stars are decorative objects rendered in the background to create a richer visual atmosphere. They remain independent from the gameplay logic and serve only as graphical enhancements.
 
 <p align="center">
-<img src="hardware/images/star_runtime_sequence.png" width="480"/>
+<img src="hardware/images/star_runtime_sequence.png" width="320"/>
 </p>
 
 <p align="center">
@@ -255,7 +255,7 @@ Trees are decorative foreground objects placed near the ground to enrich the gam
 Trees are foreground decorative objects positioned near the ground. Together with the Clouds and Stars, Trees contribute to the illusion of continuous movement and create a more immersive gameplay environment.
 
 <p align="center">
-<img src="hardware/images/tree_runtime_sequence.png" width="550"/>
+<img src="hardware/images/tree_runtime_sequence.png" width="350"/>
 </p>
 
 <p align="center">
