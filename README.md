@@ -19,11 +19,10 @@
 
 
 <div align="center">
-  <"https://github.com/user-attachments/assets/dbf64976-78c0-44e9-a612-25b0aa40bf5b" width="740"/>
+  <video src="https://github.com/user-attachments/assets/dbf64976-78c0-44e9-a612-25b0aa40bf5b" width="100%" max-width="900px" controls></video>
   <br>
-  <em>Figure 2. AK Foundation</em>
+  <em>Gameplay demo</em>
 </div>
-
 # Documentation
 
 | File | Description |
