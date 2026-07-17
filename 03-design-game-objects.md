@@ -360,7 +360,7 @@ The Game Controller coordinates all gameplay objects and controls the overall ga
 All gameplay objects are coordinated by the Game Controller through a continuous update cycle. During every game tick, the controller updates object states, processes player input, performs collision detection, updates the score, manages level progression, and finally renders the complete frame to the OLED display.
 
 <p align="center">
-<img src="hardware/images/game_object_interaction_sequence.png" width="650"/>
+<img src="hardware/images/game_object_interaction_sequence.png" width="780"/>
 </p>
 
 <p align="center">
