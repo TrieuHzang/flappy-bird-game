@@ -1,0 +1,16 @@
+#ifndef __SCREENS_BITMAP_H__
+#define __SCREENS_BITMAP_H__
+
+#include "view_render.h"
+
+// scr_welcome
+extern const unsigned char PROGMEM bitmap_dolphin[];
+extern const unsigned char bitmap_bird[] PROGMEM;
+extern const unsigned char bitmap_bird2[] PROGMEM;
+extern const unsigned char bitmap_bird16[] PROGMEM;
+extern const unsigned char bitmap_arrow16[] PROGMEM;
+extern const unsigned char bitmap_cloud16[] PROGMEM;
+extern const unsigned char bitmap_tree16[] PROGMEM;
+extern const unsigned char bitmap_star14[] PROGMEM;
+
+#endif //__SCREENS_BITMAP_H__
