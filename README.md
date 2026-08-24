@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/language-C%2B%2B-brightgreen" alt="Language">
+  <img src="https://img.shields.io/badge/language-C-brightgreen" alt="Language">
   <img src="https://img.shields.io/badge/mcu-STM32L151-brightgreen" alt="MCU">
   <img src="https://img.shields.io/badge/framework-Active%20Kernel-brightgreen" alt="Framework">
   <img src="https://img.shields.io/badge/hardware-AK%20Base%20Kit-brightgreen" alt="Hardware">
