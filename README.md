@@ -1,33 +1,12 @@
 
-<div align="center">
+![Repo Traffic](https://komarev.com/ghpvc/?username=TrieuHzang-flappy-bird-game&label=Repo%20Traffic&color=0e75b6&style=flat)
 
-<h1>🐦 Flappy Bird Game</h1>
+![Language](https://img.shields.io/badge/language-C%2B%2B-brightgreen)
+![MCU](https://img.shields.io/badge/mcu-STM32L151-brightgreen)
+![Framework](https://img.shields.io/badge/framework-Active%20Kernel-brightgreen)
+![Hardware](https://img.shields.io/badge/hardware-AK%20Base%20Kit-brightgreen)
 
-<h3>Flappy Bird on STM32L151 — AK Base Kit</h3>
-
-<p>
-A retro Flappy Bird game developed for the <b>AK Base Kit</b>, powered by
-the <b>STM32L151</b> microcontroller and built on the
-<b>Active Kernel event-driven framework</b>.
-</p>
-
-<p>
-  <img src="https://komarev.com/ghpvc/?username=TrieuHzang-flappy-bird-game&label=Repo%20Traffic&color=0e75b6&style=flat" alt="Repo Traffic">
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/language-C%2FC%2B%2B-brightgreen" alt="Language">
-  <img src="https://img.shields.io/badge/mcu-STM32L151-brightgreen" alt="MCU">
-  <img src="https://img.shields.io/badge/framework-Active%20Kernel-brightgreen" alt="Framework">
-  <img src="https://img.shields.io/badge/hardware-AK%20Base%20Kit-brightgreen" alt="Hardware">
-</p>
-
-</div>
-
----
-
-# Flappy Bird Game - Game built on AK Embedded Base Kit
-# Flappy Bird Game - Game built on AK Embedded Base Kit
+# Flappy Bird - Game built on AK Embedded Base Kit
 
 <div align="center">
   <img src="hardware/images/logo_flappy_bird.png" width="600">
