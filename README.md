@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=TrieuHzang-flappy-bird-game&label=Repo%20Traffic&color=0e75b6&style=flat" alt="Repo Traffic">
 </p>
@@ -20,7 +26,7 @@
 ## Gameplay demo
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/dbf64976-78c0-44e9-a612-25b0aa40bf5b" width="500%" max-width="1400px" controls></video>
+  <video src="https://github.com/user-attachments/assets/96f0094f-faeb-4ea3-a86b-8797f0d333b1" width="500%" max-width="1400px" controls></video>
   <br>
   <em>Gameplay demo</em>
 </div>
