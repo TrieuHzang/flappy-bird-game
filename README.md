@@ -60,7 +60,7 @@ What makes Flappy Bird stand out in the AK game series:
 <div align="center">
   <img src="hardware/images/ak-embedded-base-kit-version-3.jpg" width="480"/>
   <br>
-  <em>Figure 3. AK Embedded Base Kit - STM32L151</em>
+  <em>Figure 2. AK Embedded Base Kit - STM32L151</em>
 </div>
 
 ### Memory map
@@ -82,14 +82,14 @@ ak_flash /dev/ttyUSB0 ak-base-kit-stm32l151-application.bin 0x08003000
 <div align="center">
   <img src="hardware/images/board-view-top.png" width="250"/>
   <br>
-  <em>Figure 5. Board view top</em>
+  <em>Figure 3. Board view top</em>
 </div>
 
 
 <div align="center">
   <img src="hardware/images/board-view-bottom.png" width="250"/>
   <br>
-  <em>Figure 6. Board view bottom</em>
+  <em>Figure 4. Board view bottom</em>
 </div>
 
 ## II. Game Description and Objects
@@ -98,7 +98,7 @@ The following section describes the gameplay and core mechanics of Flappy Bird. 
 <div align="center">
   <img src="hardware/images/menu.png" width="480">
   <br>
-  <em>Figure 7. Menu Screen</em>
+  <em>Figure 5. Menu Screen</em>
 </div>
 
 The game opens on the Flappy Menu, which provides the following options:
@@ -111,7 +111,7 @@ The game opens on the Flappy Menu, which provides the following options:
 <div align="center">
   <img src="hardware/images/select_mode.png" width="480">
   <br>
-  <em>Figure 8. Select Mode Screen</em>
+  <em>Figure 6. Select Mode Screen</em>
 </div>
 
 After selecting Start Game, the player is taken to the Select Mode screen to choose the gameplay style.
@@ -157,7 +157,7 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 <div align="center">
   <img src="hardware/images/game_over.png" width="480">
   <br>
-  <em>Figure 9. Game Over Screen</em>
+  <em>Figure 7. Game Over Screen</em>
 </div>
 
 ## IV. Basic Game Sequence Logic
@@ -165,7 +165,7 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 <div align="center">
   <img src="hardware/images/basic_sequence_logic.png" width="800">
   <br>
-  <em>Figure 10. Basic Game Sequence Logic</em>
+  <em>Figure 8. Basic Game Sequence Logic</em>
 </div>
 
 ## Contact & Support
