@@ -20,7 +20,7 @@
 ## Gameplay demo
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/96f0094f-faeb-4ea3-a86b-8797f0d333b1" width="3000%" max-width="1400px" controls></video>
+  <video src="https://github.com/user-attachments/assets/e314544e-a4cf-435a-9c4c-5dc056fa318e" controls></video>
   <br>
   <em>Gameplay demo</em>
 </div>
