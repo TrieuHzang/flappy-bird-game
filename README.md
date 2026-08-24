@@ -176,6 +176,7 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 Thank you for visiting this repository.
 If you have any questions or feedback about the game design or firmware, feel free to reach out directly.
 ```
+> **Note:** A pre-built `.bin` firmware file is available in the `hardware/bin` directory, allowing users to flash and play the game directly without rebuilding the source code.
 
 **My contact:**
 
