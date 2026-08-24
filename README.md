@@ -12,12 +12,12 @@
 # Flappy Bird - Game built on AK Embedded Base Kit
 
 <div align="center">
-  <img src="hardware/images/logo_flappy_bird.png" width="600">
+  <img src="hardware/images/logo_flappy_bird.png" width="500">
   <br>
   <em>Figure 1. Gameplay Screen</em>
 </div>
 
-# Gameplay demo
+## Gameplay demo
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/dbf64976-78c0-44e9-a612-25b0aa40bf5b" width="300%" max-width="1400px" controls></video>
@@ -31,7 +31,7 @@ After the startup animation, the game automatically enters a short gameplay demo
 
 When the demo finishes, the message **"PRESS MODE"** is displayed to indicate that the player can continue. Even if this message is not currently visible due to the blinking animation, pressing the **MODE** button at any time during this stage immediately opens the **FLAPPY MENU**.
 
-# Documentation
+## Documentation
 
 | File | Description |
 |------|-------------|
@@ -41,7 +41,7 @@ When the demo finishes, the message **"PRESS MODE"** is displayed to indicate th
 | docs/03-design-game-objects.md | Design and behavior of gameplay objects: Bird, Pipe, Ground, Score, and UI. |
 | docs/04-design-runtime.md | Runtime event flow, game loop, state machine, button handling, and rendering process. |
 
-# Introduction
+## Introduction
 
 Flappy Bird is a side-scrolling arcade game built on the AK Embedded Base Kit, powered by the Active Kernel (AK) event-driven framework. The player controls a bird flying through moving pipes and must avoid collisions while achieving the highest possible score.
 
