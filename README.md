@@ -1,10 +1,13 @@
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=TrieuHzang-flappy-bird-game&label=Repo%20Traffic&color=0e75b6&style=flat" alt="Repo Traffic">
+</p>
 
-![Repo Traffic](https://komarev.com/ghpvc/?username=TrieuHzang-flappy-bird-game&label=Repo%20Traffic&color=0e75b6&style=flat)
-
-![Language](https://img.shields.io/badge/language-C%2B%2B-brightgreen)
-![MCU](https://img.shields.io/badge/mcu-STM32L151-brightgreen)
-![Framework](https://img.shields.io/badge/framework-Active%20Kernel-brightgreen)
-![Hardware](https://img.shields.io/badge/hardware-AK%20Base%20Kit-brightgreen)
+<p align="center">
+  <img src="https://img.shields.io/badge/language-C%2B%2B-brightgreen" alt="Language">
+  <img src="https://img.shields.io/badge/mcu-STM32L151-brightgreen" alt="MCU">
+  <img src="https://img.shields.io/badge/framework-Active%20Kernel-brightgreen" alt="Framework">
+  <img src="https://img.shields.io/badge/hardware-AK%20Base%20Kit-brightgreen" alt="Hardware">
+</p>
 
 # Flappy Bird - Game built on AK Embedded Base Kit
 
