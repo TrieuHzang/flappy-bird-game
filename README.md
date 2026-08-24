@@ -43,26 +43,16 @@ When the demo finishes, the message **"PRESS MODE"** is displayed to indicate th
 
 # Introduction
 
-Flappy Bird is a side-scrolling arcade game built on top of the AK Embedded Base Kit — an educational platform designed for learning modern embedded software development through interactive applications. The project recreates the classic Flappy Bird gameplay on a 128×64 OLED display using the STM32L151 microcontroller and the AK Embedded Framework.
+Flappy Bird is a side-scrolling arcade game built on the AK Embedded Base Kit, powered by the Active Kernel (AK) event-driven framework. The player controls a bird flying through moving pipes and must avoid collisions while achieving the highest possible score.
 
-While developing and playing Flappy Bird, you will explore several core concepts of embedded systems engineering:
+What makes Flappy Bird stand out in the AK game series:
 
-- Software architecture: Organizing the application into independent screens, game objects, and reusable modules.
-- Event-driven programming: Processing button inputs, timers, and system events to create responsive gameplay.
-- Real-time game loop: Updating object positions, rendering graphics, detecting collisions, and calculating scores at fixed intervals.
-- State management: Implementing finite state machines to control screen transitions, gameplay flow, and game-over conditions.
+- Two gameplay modes: Supports both Classic Mode and Reverse Mode for different gameplay experiences.
+- Real-time collision and scoring: Bird and pipe positions are updated continuously, with collision detection and score calculation during gameplay.
+- Persistent high score: The best score is stored in the STM32L151's internal Data EEPROM, allowing it to remain after power loss.
+- Event-driven architecture: Button inputs, timers, screen transitions, and gameplay events are handled through the Active Kernel framework.
 
-<div align="center">
-  <img src="hardware/images/ak-foundation-logo.png" width="240"/>
-  <br>
-  <em>Figure 2. AK Foundation</em>
-</div>
-
-This kit would not have been possible without the help of [EPCB](https://epcb.vn/pages/frontpage).
-
-AK Embedded Base Kit, utilizing STM32L151 MCU, is an evaluation kit for advanced embedded software learners.
-
-## I. Features
+## I. Hardware
 
 - This kit integrates 1.54" Oled LCD, 3 push buttons, and 1 buzzer, which would be sufficient to create a small video game with an event driven paradigm.
 - It also includes RS485, Qwiic Connect System, and Grove Ecosystems, suitable for prototyping other practical applications in embedded systems.
@@ -71,18 +61,6 @@ AK Embedded Base Kit, utilizing STM32L151 MCU, is an evaluation kit for advanced
   <img src="hardware/images/ak-embedded-base-kit-version-3.jpg" width="480"/>
   <br>
   <em>Figure 3. AK Embedded Base Kit - STM32L151</em>
-</div>
-
-### Purpose
-
-Students who are enrolled in the AK foundation's embedded training program will make use of this evaluation kit to develop a small unique video game that will be able to run smoothly as well as closely follow an event driven paradigm in embedded systems programming. This repository also contains all the code which would form the AK framework that students can use to facilitate their development process.
-
-We also hope that this repository will also be useful for those are on the look out for a well-built kit to practice their embedded systems programming skills.
-
-<div align="center">
-  <img src="hardware/images/ak-mcu-kit-hw2-github-1280x640px.png" width="560"/>
-  <br>
-  <em>Figure 4. AK MCU KIT</em>
 </div>
 
 ### Memory map
@@ -99,37 +77,26 @@ AK base kit uses the following memory map to run its application code
 ak_flash /dev/ttyUSB0 ak-base-kit-stm32l151-application.bin 0x08003000
 ```
 
-### Hardware
-
 [AK base kit's schematic](/hardware/schematic/schematic-ak-embedded-base-kit-version-3.pdf)
 
 <div align="center">
-  <img src="hardware/images/board-view-top.png" width="380"/>
+  <img src="hardware/images/board-view-top.png" width="250"/>
   <br>
   <em>Figure 5. Board view top</em>
 </div>
 
 
 <div align="center">
-  <img src="hardware/images/board-view-bottom.png" width="380"/>
+  <img src="hardware/images/board-view-bottom.png" width="250"/>
   <br>
   <em>Figure 6. Board view bottom</em>
 </div>
-
-
-### Reference
-
-| Topic | Link |
-| ------ | ------ |
-| Training course | <https://github.com/the-ak-foundation/embedded-training-program> |
-| Tutorials | <https://epcb.vn/blogs/ak-embedded-software> |
-| Vendor | <https://epcb.vn/products/ak-embedded-base-kit-lap-trinh-nhung-vi-dieu-khien-mcu> |
 
 ## II. Game Description and Objects
 The following section describes the gameplay and core mechanics of Flappy Bird. It serves as a reference for understanding the game's mechanics and firmware implementation. Opens on the Flappy Menu, which offers the following options:
 
 <div align="center">
-  <img src="hardware/images/menu.png" width="600">
+  <img src="hardware/images/menu.png" width="480">
   <br>
   <em>Figure 7. Menu Screen</em>
 </div>
@@ -142,7 +109,7 @@ The game opens on the Flappy Menu, which provides the following options:
 - About: Display information about the game, including the current version and author.
 
 <div align="center">
-  <img src="hardware/images/select_mode.png" width="600">
+  <img src="hardware/images/select_mode.png" width="480">
   <br>
   <em>Figure 8. Select Mode Screen</em>
 </div>
@@ -188,7 +155,7 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 - **Game Over:** The game ends when the Bird collides with a Pipe, an Arrow, or leaves the playable area. The final score is compared with the stored high score before the player is taken to the **Game Over** screen, where they can retry the game or return to the main menu.
 
 <div align="center">
-  <img src="hardware/images/game_over.png" width="600">
+  <img src="hardware/images/game_over.png" width="480">
   <br>
   <em>Figure 9. Game Over Screen</em>
 </div>
