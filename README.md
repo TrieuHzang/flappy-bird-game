@@ -170,7 +170,7 @@ Once a mode is selected, the game initializes the gameplay objects and starts a 
 
 ## Contact & Support
 
-**Trieu Ha Giang** — Embedded Systems Engineering Student
+**Trieu Ha Giang** - Embedded Systems Engineering Student
 
 ```text
 Thank you for visiting this repository.
